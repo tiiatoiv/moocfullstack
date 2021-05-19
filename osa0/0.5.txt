@@ -1,13 +1,13 @@
-selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
-palvelin-->selain: HTML-koodi
-selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
-palvelin-->selain: main.css
-selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
-palvelin-->selain: spa.js
+Selain->Palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+Palvelin-->Selain: HTML-koodi
+Selain->Palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Palvelin-->Selain: main.css
+selain->Palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+Palvelin-->Selain: spa.js
 
-note over selain:
-Käynnistää javascriptkoodin joka hakee data.jsonin
+note over Selain:
+Käynnistää javascriptkoodin joka hakee datan
 end note
 
-selain->palvelin: https://studies.cs.helsinki.fi/exampleapp/data.json
-palvelin-->selain: [{content: "testi", date: "2021-05-10T07:13:38.771Z"}, {content: "", date: "2021-05-10T07:36:17.289Z"},…]
+Selain->Palvelin: https://studies.cs.helsinki.fi/exampleapp/data.json
+Palvelin-->Selain: [{content: "testi", date: "2021-05-10T07:13:38.771Z"}, {content: "", date: "2021-05-18T07:36:17.289Z"},…]
