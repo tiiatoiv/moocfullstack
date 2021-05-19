@@ -1,0 +1,6 @@
+selain->palvelin: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over selain:
+Selain lähettää palvelimelle form datan, ja samalla kutsuu päivitysfunktiotaan joka lisää lähetetyn datan jo selaimessa olevaan
+data arrayhyn, ja päivittää sen myös sivun html:ään. Kaikki funtiot ja tiedon päivitys tapahtuu selaimessa.
+end note

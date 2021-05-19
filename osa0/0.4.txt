@@ -1,0 +1,19 @@
+Selain->Palvelin: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+Palvelin-->Selain: Uudelleenohjauspyyntö
+Selain->Palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+Palvelin-->Selain: HTML-koodi
+Selain->Palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Palvelin-->Selain: main.css
+Selain->Palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+Palvelin-->Selain: main.js
+
+note over Selain:
+Selain lähettää formdataa palvelimelle, joka lisää lähetetyn datan listaan ja lähettää uudelleenohjauspyynnön
+sivun päivittämiseksi. Tämän seurauksena javascript koodi käydään läpi uudelleen, joka lataa päivitetyn data.jsonin.
+end note
+
+
+selain->palvelin HTTP GET https://studies.cs.helsinki.fi/favicon.ico
+palvelin-->selain: favicon.ico
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+palvelin-->selain: [{content: "ergk", date: "2021-05-09T07:11:25.910Z"},…]
